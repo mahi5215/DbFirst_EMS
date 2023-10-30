@@ -1,2 +1,24 @@
 @model IEnumerable<Department>
-<h2>Dept Listing<h2>
+
+<div class='container'>
+<h2>Department Listing<h2>
+    <h3>@Html.ActionLink("Add Department","Create")</h3>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+            <th>@Html.DisplayNameFor(d=>d.Id)</th>
+            <th>@Html.DisplayNameFor(d=>d.DeptName)</th>
+            <th>@Html.DisplayNameFor(d=>d.Location)</th>
+
+        </thead>
+        <tbody>
+            @foreach(var d in @Model)
+            {
+                <
+                <td>@d.Id</td>
+                <td>@d.DeptName/td>
+                <td>@d.Location</td>
+
+            }
+        </tbody>
+</div>
