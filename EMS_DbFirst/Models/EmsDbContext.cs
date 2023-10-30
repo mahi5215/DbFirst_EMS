@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace EMS_DbFirst.Models;
 
 public partial class EmsDbContext : DbContext
