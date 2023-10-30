@@ -11,6 +11,7 @@ using BzLayer;
         Console.WriteLine($"{a.ID} {a.Name}{a.Ratings} {a.Ryear}");
     }
      }
+    
      else{
 Console.WriteLine("No Movies found");
      }
