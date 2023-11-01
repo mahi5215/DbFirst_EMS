@@ -4,6 +4,11 @@ using EMS_DbFirst.Models;
 public class DeptController:Controller
 {
     private readonly EmsDbContext context;
+    public IActionResult Display(int id)
+    {
+        var data=context.Employees.Find(id);
+        return View(data);
+    }
     public DeptController(EmsDbContext _context)
     {
         context=_context;
