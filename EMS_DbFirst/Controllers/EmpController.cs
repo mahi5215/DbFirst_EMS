@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 namespace EMS_DbFirst.Controllers;
 using EMS_DbFirst.Models;
 public class EmpController:Controller

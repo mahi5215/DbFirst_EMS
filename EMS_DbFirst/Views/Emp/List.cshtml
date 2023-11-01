@@ -13,6 +13,14 @@
             <td>@Html.DisplayNameFor(e=>e.Name)</td>
 
         </th>
+        <th>
+            <td>@Html.DisplayNameFor(e=>e.Dept.DeptName)</td>
+
+        </th>
+        <th>
+            <td>@Html.DisplayNameFor(e=>e.Dept.Location)</td>
+
+        </th>
     </thead>
     <tbody>
         @foreach (var d in @Model)
@@ -20,8 +28,10 @@
             <tr>
                 <td>@Html.DisplayFor(e=>d.EmpId)</td>
                 <td>@Html.DisplayFor(e=>d.Name)</td>
-                <td>
-                    <a asp-controller="Employee" asp-action="Display" asp-route-itemid="=item.Id">Display</a>
+                <td>@Html.DisplayFor(e=>d.Dept.DeptName)</td>
+                <td>@Html.DisplayFor(e=>d.Dept.Location)</td>
+                 <td>
+                   <a asp-controller="Employee" asp-action="Display" asp-route-itemid="=item.Id">Display</a> 
                 </td>
             </tr>
         }
