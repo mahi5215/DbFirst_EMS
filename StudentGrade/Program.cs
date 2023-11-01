@@ -4,11 +4,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+var connectionstring=builder.Configuration.GetConnectionString("con");
+builder.Services.AddDbContext<SGDbContext>(options=>options.UseSqlServer(connectionstring));
 
 var app = builder.Build();
 
-var connectionstring=builder.Configuration.GetConnectionString("con");
-builder.Services.AddDbContext<SGDbContext>(options=>options.UseSqlServer(connectionstring));
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -27,6 +28,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Student}/{action=List}/{id?}");
 
 app.Run();
