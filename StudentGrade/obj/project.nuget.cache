@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yz7LSZEfue+KWa/hg+emFEZ6Jv0llKYjvXbjcfJ7or9YfX+82JUo+nPb8hu6vILEKnzAaZVHXK7HSpJerB2tSw==",
+  "dgSpecHash": "6NAfhK6rye+YebGN5ImYX9EedmzPyUxdlDV/s2Rf1gYujT1u0wGZU8x83VETsjh5GwX8URkaa6GpVFiRTI65GA==",
   "success": true,
   "projectFilePath": "/home/coder/project/workspace/StudentGrade/StudentGrade.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "/home/coder/.nuget/packages/microsoft.entityframeworkcore.design/7.0.13/microsoft.entityframeworkcore.design.7.0.13.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.13/microsoft.entityframeworkcore.relational.7.0.13.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.entityframeworkcore.sqlserver/7.0.13/microsoft.entityframeworkcore.sqlserver.7.0.13.nupkg.sha512",
+    "/home/coder/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.13/microsoft.entityframeworkcore.tools.7.0.13.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "/home/coder/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

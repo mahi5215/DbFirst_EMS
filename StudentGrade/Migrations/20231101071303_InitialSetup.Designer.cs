@@ -12,7 +12,7 @@ using StudentGrade.Models;
 namespace StudentGrade.Migrations
 {
     [DbContext(typeof(SGDbContext))]
-    [Migration("20231031121741_InitialSetup")]
+    [Migration("20231101071303_InitialSetup")]
     partial class InitialSetup
     {
         /// <inheritdoc />
@@ -62,10 +62,6 @@ namespace StudentGrade.Migrations
 
                     b.Property<decimal>("Height")
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<byte[]>("Photo")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
 
                     b.Property<string>("StudentName")
                         .IsRequired()

@@ -9,7 +9,7 @@ using StudentGrade.Models;
 
 namespace StudentGrade.Controllers
 {
-    [Route("[controller]")]
+    
     public class StudentController : Controller
     {
         private readonly SGDbContext context;
