@@ -6,7 +6,7 @@ public class DeptController:Controller
     private readonly EmsDbContext context;
     public IActionResult Display(int id)
     {
-        var data=context.Employees.Find(id);
+        var data=context.Employees.Where(e=>e.DeptId==id);
         return View(data);
     }
     public DeptController(EmsDbContext _context)
