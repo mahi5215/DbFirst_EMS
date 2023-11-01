@@ -14,11 +14,18 @@
         <tbody>
             @foreach(var d in @Model)
             {
-                <
+                <tr>
                 <td>@d.Id</td>
-                <td>@d.DeptName/td>
+                <td>@d.DeptName</td>
                 <td>@d.Location</td>
-
+                <td></td>
+                <td>
+                    @Html.ActionLink("Details","Display",new{id=d.Id}) &nbsp;&nbsp;
+                    @Html.ActionLink("Edit","Edit",new{id=d.Id}) &nbsp;&nbsp;
+                    @Html.ActionLink("Delete","Delete",new{id=d.Id}) &nbsp;&nbsp;
+               </td>
+                </tr>
             }
         </tbody>
+    </table>
 </div>

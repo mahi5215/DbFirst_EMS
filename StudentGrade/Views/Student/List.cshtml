@@ -1,0 +1,27 @@
+@model IEnumerable<Student>
+    <h3>Student Details</h3>
+
+    <table class='table'>
+        <thead>
+            <th>@Html.DisplayNameFor(m=>m.StudentId)</th>
+            <th>@Html.DisplayNameFor(m=>m.StudentName)</th>
+            <th>@Html.DisplayNameFor(m=>m.DateOfBirth)</th>
+            <th>@Html.DisplayNameFor(m=>m.Height)</th>
+            <th>@Html.DisplayNameFor(m=>m.Weight)</th>
+            <th>@Html.DisplayNameFor(m=>m.Grade)</th>
+
+        </thead>
+        <tbody>
+            @foreach(var m in @Model)
+            {
+                <tr>
+                    <td>@m.StudentId</td>
+                    <td>@m.StudentName</td>
+                    <td>@m.DateOfBirth</td>
+                    <td>@m.Height</td>
+                    <td>@m.Weight</td>
+                    <td>@m.Grade</td>
+                </tr>
+            }
+        </tbody>
+    </table>

@@ -5,6 +5,8 @@ namespace EMS_DbFirst.Models;
 
 public partial class Department
 {
+
+    [Key]
     public int Id { get; set; }
 
     [Display(Name ="Department Name")]
